@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{474D7FAA-CD57-4F1D-A567-E86F449D8C16}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>OCEANA_Managament_System_.My.MyApplication</StartupObject>
+    <RootNamespace>OCEANA_Managament_System_</RootNamespace>
+    <AssemblyName>OCEANA Managament System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OCEANA Managament System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OCEANA Managament System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addProfile_Admin.Designer.vb">
+      <DependentUpon>addProfile_Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addProfile_Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Main.Designer.vb">
+      <DependentUpon>Admin_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing.Designer.vb">
+      <DependentUpon>Billing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Billing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePatient_Screen.Designer.vb">
+      <DependentUpon>CreatePatient_Screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePatient_Screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor_Main_Screen.Designer.vb">
+      <DependentUpon>Doctor_Main_Screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor_Main_Screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Screen.Designer.vb">
+      <DependentUpon>Edit_Screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Screen.Designer.vb">
+      <DependentUpon>Login_Screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Record_treatment_details.Designer.vb">
+      <DependentUpon>Record_treatment_details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Record_treatment_details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reset_Paaword.Designer.vb">
+      <DependentUpon>Reset_Paaword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reset_Paaword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RetrievePatientRecords.Designer.vb">
+      <DependentUpon>RetrievePatientRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RetrievePatientRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_Main.Designer.vb">
+      <DependentUpon>Staff_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllBills.Designer.vb">
+      <DependentUpon>ViewAllBills.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllBills.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllPatient.Designer.vb">
+      <DependentUpon>ViewAllPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllTreatment.Designer.vb">
+      <DependentUpon>ViewAllTreatment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllTreatment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllUser.Designer.vb">
+      <DependentUpon>ViewAllUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_User_Profile.Designer.vb">
+      <DependentUpon>View_User_Profile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View_User_Profile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="addProfile_Admin.resx">
+      <DependentUpon>addProfile_Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Main.resx">
+      <DependentUpon>Admin_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing.resx">
+      <DependentUpon>Billing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePatient_Screen.resx">
+      <DependentUpon>CreatePatient_Screen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor_Main_Screen.resx">
+      <DependentUpon>Doctor_Main_Screen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Screen.resx">
+      <DependentUpon>Edit_Screen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Screen.resx">
+      <DependentUpon>Login_Screen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Record_treatment_details.resx">
+      <DependentUpon>Record_treatment_details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reset_Paaword.resx">
+      <DependentUpon>Reset_Paaword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RetrievePatientRecords.resx">
+      <DependentUpon>RetrievePatientRecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_Main.resx">
+      <DependentUpon>Staff_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllBills.resx">
+      <DependentUpon>ViewAllBills.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllPatient.resx">
+      <DependentUpon>ViewAllPatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllTreatment.resx">
+      <DependentUpon>ViewAllTreatment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllUser.resx">
+      <DependentUpon>ViewAllUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_User_Profile.resx">
+      <DependentUpon>View_User_Profile.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\197706.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door-icon-10422.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-nurse-female-icon-14 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-nurse-female-icon-14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medical-Nurse-Female-Light-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountains-grids-polygon-4k_1540752911.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nurse-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People-Doctor-Male-icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled picture1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled picture2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled picture3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled picture4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled picture5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons-Land-Vista-People-Medical-Nurse-Female-Light.ico" />
+    <None Include="Resources\1920x1080-light-steel-blue-solid-color-background.jpg" />
+    <None Include="Resources\1920x1080-blue-gray-solid-color-background.jpg" />
+    <None Include="Resources\background-blue-gradient-1.png" />
+    <None Include="Resources\itl.cat_pink-sky-wallpaper_1877300.png" />
+    <None Include="Resources\blue-gradient-white-linear-1920x1080-c2-87cefa-ffffff-a-270-f-14.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
